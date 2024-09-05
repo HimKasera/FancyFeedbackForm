@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="friendForm" action="mailto:himanshukasera65@gmail.com" method="post" enctype="text/plain">
+            <h2>Join the Friendship Circle!</h2>
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="meet">Where did you meet me?</label>
+            <select id="meet" name="meet" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="College">College</option>
+                <option value="Event">Event</option>
+                <option value="Social Media">Social Media</option>
+                <option value="School">School</option>
+                <option value="Work">Work</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Leave your feedback..."></textarea>
+
+            <label for="receiverEmail">Send to another friend (optional):</label>
+            <input type="email" id="receiverEmail" name="receiverEmail" placeholder="Enter their email">
+
+            <input type="hidden" id="choice" name="choice" value="">
+
+            <button type="submit">Submit</button>
+        </form> 
+        <div id="friendBox" class="friend-box">
+            <p>You are my friend?</p>
+            <button id="yesBtn" class="yes">Yes</button>
+            <button id="noBtn" class="no">No</button>
+        </div> </div>
+  
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #d42e33 0%, #e9e629 100%, #ca5737 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #584949;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 1px #7a6b6e;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    padding: 30px;
+    background-color: rgba(173, 129, 129, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #000000;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    font-size: 1rem;
+}
+
+button {
+    padding: 12px 20px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+button[type="submit"] {
+    background-color: #6a0572;
+    color: white;
+    width: 100%;
+}
+
+/* Friend Box Styles */
+.friend-box {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: lightgray;
+    text-align: center;
+    border-radius: 20px;
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button.yes, button.no {
+    width: 80px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    margin: 5px; /* Add some spacing between buttons */
+    transition: transform 0.3s ease-in-out;
+}
+
+button.yes {
+    background-color: #af2c4b;
+}
+
+button.no {
+    background-color: #6a0572;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+p {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
